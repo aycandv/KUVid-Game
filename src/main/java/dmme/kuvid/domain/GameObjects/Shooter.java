@@ -116,13 +116,6 @@ public class Shooter extends Observable {
     	}
     	
     }
-    
-    /* 
-    REQUIRES: pickAtom() method has used and shooter has active atom on it.
-    MODIFIES: Shooter's currently atom become getShootedAtom. Also current shoted atom has been removed from GameObjectMap,
-    		  Also picks a new atom.
-    EFFECTS: Current Atom's lists, position and the number inside the GameObjectMap
-     */
 
     public void shootAtom() {
     	if (this.currentAtom!= null) {
