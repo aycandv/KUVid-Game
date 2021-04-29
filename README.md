@@ -1,5 +1,7 @@
 # KUVid - DM Me
 
+[![Build Status](https://travis-ci.com/aycandv/KUVid-Game.svg?branch=main)](https://travis-ci.com/aycandv/KUVid-Game)
+
 KuVid is a game for COMP 302 Term Project.
 
 ## Team Members
