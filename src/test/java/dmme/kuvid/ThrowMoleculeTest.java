@@ -62,7 +62,7 @@ public class ThrowMoleculeTest {
         //assertEquals(1, betaList.size(), "List Size don't match.");
         //assertEquals(1, gammaList.size(), "List Size don't match.");
         //assertEquals(1, sigmaList.size(), "List Size don't match.");
-        assertTrue(1);
+        assertTrue(true);
     }
 
     @Test
@@ -96,7 +96,7 @@ public class ThrowMoleculeTest {
             }
         }
 
-        assertTrue(1);
+        assertTrue(true);
     }
 
     @Test
@@ -128,6 +128,6 @@ public class ThrowMoleculeTest {
             }
         }
 
-        assertTrue(1);
+        assertTrue(true);
     }
 }
