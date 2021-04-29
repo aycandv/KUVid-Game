@@ -1,5 +1,5 @@
 # KUVid - DM Me
-
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.com/aycandv/KUVid-Game.svg?branch=main)](https://travis-ci.com/aycandv/KUVid-Game)
 
 KuVid is a game for COMP 302 Term Project.
