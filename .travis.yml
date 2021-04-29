@@ -1,6 +1,6 @@
-language: python
-#jdk:
-  #- oraclejdk11
+language: java
+jdk:
+  - oraclejdk11
 
 after-success:
   - echo "Success"
