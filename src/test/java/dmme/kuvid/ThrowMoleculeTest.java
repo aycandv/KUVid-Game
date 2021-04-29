@@ -66,40 +66,6 @@ public class ThrowMoleculeTest {
     }
 
     @Test
-    public void checkMoleculeIsActive() {
-        KUVidGame.getInstance().setNumMolecules(4);
-        KUVidGame.getInstance().setPlayableArea(new Dimension(1000, 1000));
-        KUVidGame.getInstance().setL(10);
-
-        DomainFactory.getInstance().createMolecule(MoleculeType.ALPHA, 1);
-        DomainFactory.getInstance().createMolecule(MoleculeType.BETA, 1);
-        DomainFactory.getInstance().createMolecule(MoleculeType.GAMMA, 1);
-        DomainFactory.getInstance().createMolecule(MoleculeType.SIGMA, 1);
-
-        movementHandler.getInstance().throwMolecule();
-
-        List<GameObject> alphaList = KUVidGame.getGameObjectMap().get(new Key(ObjectType.MOLECULE, MoleculeType.ALPHA));
-        List<GameObject> betaList = KUVidGame.getGameObjectMap().get(new Key(ObjectType.MOLECULE, MoleculeType.BETA));
-        List<GameObject> gammaList = KUVidGame.getGameObjectMap().get(new Key(ObjectType.MOLECULE, MoleculeType.GAMMA));
-        List<GameObject> sigmaList = KUVidGame.getGameObjectMap().get(new Key(ObjectType.MOLECULE, MoleculeType.SIGMA));
-
-        List<GameObject> merged = Stream.concat(Stream.concat(gammaList.stream(), sigmaList.stream())
-                .collect(Collectors.toList()).stream(), Stream.concat(alphaList.stream(), betaList.stream())
-                .collect(Collectors.toList()).stream())
-                .collect(Collectors.toList());
-
-        boolean check = false;
-        for (GameObject molecule : merged) {
-            if (molecule.isActive()) {
-                check = true;
-                break;
-            }
-        }
-
-        assertTrue(true);
-    }
-
-    @Test
     public void checkMoleculeIsNotActive() {
         KUVidGame.getInstance().setNumMolecules(4);
         KUVidGame.getInstance().setPlayableArea(new Dimension(1000, 1000));
